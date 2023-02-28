@@ -1,0 +1,3 @@
+.auth-input{
+    @apply flex w-full max-w-sm placeholder:text-center text-xl py-2 border-b mb-8;
+}
