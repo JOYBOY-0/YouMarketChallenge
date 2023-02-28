@@ -9,12 +9,12 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ title, prevRoute, children }) => {
     return (
-        <>
+        <div className='flex min-h-screen justify-center'>
             <Navigation title={title} prevRoute={prevRoute} />
-            <main className='flex flex-col flex-1 min-h-[100vh]'>
+            <main className='w-full mt-16 flex flex-col max-w-md flex-1 bg-gray-100'>
                 {children}
             </main>
-        </>
+        </div>
     );
 }
 
