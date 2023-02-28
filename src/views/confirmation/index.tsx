@@ -31,7 +31,7 @@ export const Confirmation = () => {
         </div>
         <div className='flex flex-col py-8'>
           <ConfirmationCodeInput onConfirm={handleConfirmation} />
-          {error && <p className='text-red-400 text-center mt-2 text-sm'>Código incorrecto</p>}
+          {error && <p className='text-red-400 text-center mt-2 text-sm'>Código incorrecto (es: 123456)</p>}
         </div>
         <Button disabled >Reenviar</Button>
       </div>
