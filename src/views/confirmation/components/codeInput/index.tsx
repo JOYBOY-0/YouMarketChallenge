@@ -31,6 +31,19 @@ const ConfirmationCodeInput: React.FC<Props> = ({ onConfirm }) => {
     inputs.current[0]?.focus();
   };
 
+  const handleKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Backspace") {
+      e.preventDefault();
+      const newValue = [...values];
+      newValue[index] = "";
+      setValues(newValue);
+
+      if (index > 0) {
+        inputs.current[index - 1]?.focus();
+      }
+    }
+  };
+
   const handleReset = () => {
     setValues(new Array(6).fill(''));
     inputs.current[0]?.focus();
@@ -57,6 +70,7 @@ const ConfirmationCodeInput: React.FC<Props> = ({ onConfirm }) => {
           maxLength={1}
           value={value}
           onChange={(event) => handleChange(index, event.target.value)}
+          onKeyDown={(e) => handleKeyDown(index, e)}
           onPaste={handlePaste}
           ref={(el) => (inputs.current[index] = el!)}
         />
