@@ -21,9 +21,7 @@ export const Confirmation = () => {
 
   return (
     <Layout prevRoute='/' title='Confirmación'>
-      <div
-      className='flex flex-col items-center justify-center flex-1'>
-
+      <div className='flex flex-col items-center justify-center flex-1'>
         <div className='flex flex-col items-center justify-center'>
           <p className='text-gray-800'>Te acabamos de enviar un correo a </p>
           <p className='text-xl font-bold mb-6'>test@test.com.ar</p>
