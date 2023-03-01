@@ -1,0 +1,4 @@
+.founds-input{
+    @apply flex w-full max-w-sm pl-10 text-5xl py-2 border-b-2 border-gray-400 bg-inherit
+    focus:outline-none focus:border-b-gray-700;
+}
