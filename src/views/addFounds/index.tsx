@@ -27,7 +27,7 @@ export const AddFounds = () => {
     return (
     <Layout prevRoute='/home' title='Añadir fondos'>
         <div className='flex flex-col items-center justify-center flex-1'>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center px-4'>
                 <h1 className='text-xl text-gray-400 text-left w-full mb-10'>Añadir fondos</h1>
                 <div className='relative mb-8 '>
                     <input 
